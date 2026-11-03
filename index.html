@@ -2,43 +2,137 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Profile</title>
+
 <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial;
-    background: linear-gradient(135deg,#fbcfe8,#d8b4fe);
-    text-align: center;
-    padding: 40px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#fce7f3,#e9d5ff,#ddd6fe);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
 }
+
 .card {
-    background: white;
+    width: 380px;
+    background: rgba(255,255,255,0.8);
     padding: 30px;
-    border-radius: 25px;
-    max-width: 350px;
-    margin: auto;
-    box-shadow: 0 5px 20px #b98acb;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 15px 40px #bba1d5;
 }
+
+.tag {
+    background: #f3d4f0;
+    color: #a04491;
+    padding: 8px 18px;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 13px;
+}
+
 img {
-    width: 200px;
-    border-radius: 20px;
-    border: 5px solid #e9a8dc;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin: 22px 0;
+    border: 5px solid white;
+    box-shadow: 0 5px 20px #d6a9db;
 }
-h1 { color: #c05ba5; }
-p { color: #795080; }
+
+h1 {
+    color: #a04491;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #76518f;
+    margin-bottom: 12px;
+}
+
+.description {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.info {
+    background: #faf0fa;
+    padding: 15px;
+    border-radius: 18px;
+    text-align: left;
+    line-height: 2;
+    color: #745477;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills span {
+    display: inline-block;
+    background: #e9d5ff;
+    color: #8245a5;
+    padding: 8px 13px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 13px;
+}
+
+footer {
+    margin-top: 20px;
+    color: #b078ae;
+    font-size: 13px;
+}
 </style>
 </head>
+
 <body>
 
 <div class="card">
-    <img src="S__20545543.jpg">
 
-    <h1> Hello! </h1>
+    <span class="tag">✦ WELCOME TO MY WORLD ✦</span>
+
+    <br>
+
+    <img src="S__20545543.jpg" alt="My Profile">
+
+    <h1>HELLO! ♡</h1>
     <h2>พัชนิดา แตงศรี</h2>
-    <p>ยินดีต้อนรับสู่เว็บไซต์ของฉัน </p>
-    <p> นักเรียน</p>
-    <p> งานอดิเรก : ฟังเพลง</p>
-    <p> ทักษะ : HTML และ CSS</p>
-    <p> Nice to meet you</p>
+
+    <p class="description">
+        Just a girl who loves learning and creating ✨
+    </p>
+
+    <div class="info">
+        <p> ชื่อเล่น : ตาต้า</p>
+        <p> สถานะ : นักเรียน</p>
+        <p> งานอดิเรก : ฟังเพลง</p>
+        <p> สิ่งที่ชอบ : เล่นเกม</p>
+    </div>
+
+    <div class="skills">
+        <h3 style="color:#a04491;">MY SKILLS ✨</h3>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Design</span>
+    </div>
+
+    <footer>
+        MADE WITH LOVE ♡ 2026
+    </footer>
+
 </div>
 
 </body>
